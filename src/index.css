@@ -133,15 +133,28 @@ header { padding: 150px 0 60px; position: relative; }
 @media (max-width: 900px) {
   .hero-wrap {
     grid-template-columns: 1fr;
+    gap: 32px;
     justify-items: center;
     text-align: center;
   }
+  .hero-text { width: 100%; }
   .hero-image {
-    width: clamp(120px, 40vw, 200px);
     order: -1;
+    width: min(160px, 45vw);
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
   .eyebrow { justify-content: center; }
-  .hero-bottom { justify-content: center; }
+  .hero-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .btns { justify-content: center; }
 }
 .eyebrow {
