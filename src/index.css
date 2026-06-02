@@ -44,15 +44,15 @@ nav {
   left: 0;
   width: 100%;
   z-index: 100;
+  background: rgba(244, 241, 234, 0.55);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+  border-bottom: 1px solid rgba(22, 20, 15, 0.08);
+  box-shadow: 0 2px 28px rgba(22, 20, 15, 0.07);
 }
-.navbar { display: flex; justify-content: space-between; align-items: center; height: 84px; }
+.navbar { display: flex; justify-content: space-between; align-items: center; height: 80px; }
 
-/* blend-mode scoped to logo, links, burger only — keeps smart colour inversion without breaking glass button */
-.logo,
-.navlinks,
-.burger { mix-blend-mode: difference; }
-
-.logo { font-family: 'Fraunces', serif; font-weight: 900; font-size: 1.4rem; letter-spacing: -.03em; color: #fff; }
+.logo { font-family: 'Fraunces', serif; font-weight: 900; font-size: 1.4rem; letter-spacing: -.03em; color: var(--ink); }
 .logo-dot { color: var(--accent); }
 .navlinks { display: flex; gap: 30px; }
 .navlinks a {
@@ -60,7 +60,7 @@ nav {
   font-size: .78rem;
   text-transform: uppercase;
   letter-spacing: .08em;
-  color: #fff;
+  color: var(--ink);
   position: relative;
 }
 .navlinks a::after {
@@ -70,9 +70,10 @@ nav {
   bottom: -4px;
   width: 0;
   height: 1px;
-  background: #fff;
+  background: var(--accent);
   transition: width .3s;
 }
+.navlinks a:hover { color: var(--accent); }
 .navlinks a:hover::after { width: 100%; }
 
 /* glassmorphism CTA button */
@@ -85,10 +86,10 @@ nav {
   padding: 11px 22px;
   border-radius: 40px;
   border: 1px solid rgba(231, 70, 34, 0.55);
-  background: rgba(231, 70, 34, 0.18);
+  background: rgba(231, 70, 34, 0.85);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 4px 20px rgba(231, 70, 34, 0.28), inset 0 1px 0 rgba(255,255,255,.12);
+  box-shadow: 0 4px 20px rgba(231, 70, 34, 0.28), inset 0 1px 0 rgba(255,255,255,.15);
   cursor: pointer;
   white-space: nowrap;
   transition: background .3s, box-shadow .3s, transform .25s;
@@ -98,8 +99,8 @@ nav {
   gap: 7px;
 }
 .nav-glass-btn:hover {
-  background: rgba(231, 70, 34, 0.72);
-  box-shadow: 0 6px 28px rgba(231, 70, 34, 0.48), inset 0 1px 0 rgba(255,255,255,.18);
+  background: rgba(231, 70, 34, 1);
+  box-shadow: 0 6px 28px rgba(231, 70, 34, 0.48), inset 0 1px 0 rgba(255,255,255,.2);
   transform: translateY(-2px);
   color: #fff;
 }
@@ -113,7 +114,7 @@ nav {
   background: none;
   border: none;
 }
-.burger span { width: 26px; height: 2px; background: #fff; display: block; }
+.burger span { width: 26px; height: 2px; background: var(--ink); display: block; }
 
 @media (max-width: 900px) {
   .nav-glass-btn { display: none; }
