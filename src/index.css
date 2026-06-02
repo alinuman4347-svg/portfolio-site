@@ -109,6 +109,31 @@ nav {
 
 /* HERO */
 header { padding: 150px 0 60px; position: relative; }
+.hero-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+}
+.hero-text { min-width: 0; }
+.hero-image {
+  width: 280px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+.hero-image img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1.5px solid var(--line);
+  display: block;
+}
+@media (max-width: 900px) {
+  .hero-wrap { grid-template-columns: 1fr; }
+  .hero-image { width: 200px; }
+}
 .eyebrow {
   display: flex;
   align-items: center;

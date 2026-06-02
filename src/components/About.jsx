@@ -7,9 +7,6 @@ export default function About() {
             <span className="sec-num">(01)</span>
             <h2 className="sec-title">About</h2>
           </div>
-          <div className="profile-img-wrap">
-            <img src="/profile.jpg" alt="Numan Ashraf" className="profile-img" />
-          </div>
         </div>
         <div className="about-body reveal">
           <p className="about-lead">
