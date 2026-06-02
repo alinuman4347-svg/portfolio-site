@@ -3,9 +3,12 @@ export default function About() {
     <section id="about">
       <div className="wrap about-grid">
         <div className="reveal">
-          <div className="sec-head" style={{ marginBottom: 0 }}>
+          <div className="sec-head" style={{ marginBottom: 32 }}>
             <span className="sec-num">(01)</span>
             <h2 className="sec-title">About</h2>
+          </div>
+          <div className="profile-img-wrap">
+            <img src="/profile.jpg" alt="Numan Ashraf" className="profile-img" />
           </div>
         </div>
         <div className="about-body reveal">
