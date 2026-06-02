@@ -215,7 +215,7 @@ header { padding: 150px 0 60px; position: relative; }
   color: var(--accent);
   margin-bottom: 26px;
 }
-.eyebrow::before { content: ""; width: 42px; height: 1px; background: var(--accent); }
+.eyebrow::before { display: none; }
 .hero-title {
   font-family: 'Fraunces', serif;
   font-weight: 900;
