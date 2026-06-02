@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <header>
       <div className="wrap">
-        <div className="eyebrow reveal">Graphic Designer — Pakistan</div>
+        <div className="eyebrow reveal">Graphic Designer </div>
         <h1 className="hero-title reveal">
           Numan<br />Ash<em>r</em>af
         </h1>
