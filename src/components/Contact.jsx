@@ -12,6 +12,9 @@ export default function Contact() {
             <a href="tel:+923080590465" className="clink">
               <span className="ci">☏</span> +92 308 0590465
             </a>
+            <a href="https://www.linkedin.com/in/numan-ali65/" target="_blank" rel="noopener noreferrer" className="clink">
+              <span className="ci">in</span> LinkedIn
+            </a>
           </div>
         </div>
       </div>
