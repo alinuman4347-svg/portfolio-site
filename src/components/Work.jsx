@@ -1,17 +1,36 @@
 const projects = [
   {
-    tag: 'Packaging',
-    title: 'Packaging Design Collection',
-    desc: 'Custom packaging solutions for food, retail, and consumer brands.',
+    tag: 'Video Editing',
+    title: 'Video Editing Projects',
+    desc: 'Reels, promotional videos, motion graphics, and social media video content.',
     thumb: (
       <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="300" fill="#1b3a2b"/>
-        <rect x="70" y="60" width="120" height="180" rx="6" fill="#fbf9f3"/>
-        <rect x="210" y="90" width="120" height="150" rx="6" fill="#e8431f"/>
-        <rect x="86" y="84" width="88" height="40" rx="3" fill="#e8431f"/>
-        <circle cx="270" cy="150" r="34" fill="#fbf9f3"/>
-        <rect x="86" y="150" width="88" height="8" rx="4" fill="#1b3a2b"/>
-        <rect x="86" y="166" width="60" height="8" rx="4" fill="#1b3a2b"/>
+        <rect width="400" height="300" fill="#16140f"/>
+        {/* film strip top */}
+        <rect x="0" y="0" width="400" height="36" fill="#1b3a2b"/>
+        <rect x="14" y="7" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="58" y="7" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="102" y="7" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="146" y="7" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="190" y="7" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="234" y="7" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="278" y="7" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="322" y="7" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="366" y="7" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        {/* film strip bottom */}
+        <rect x="0" y="264" width="400" height="36" fill="#1b3a2b"/>
+        <rect x="14" y="271" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="58" y="271" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="102" y="271" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="146" y="271" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="190" y="271" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="234" y="271" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="278" y="271" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="322" y="271" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        <rect x="366" y="271" width="28" height="22" rx="3" fill="#fbf9f3"/>
+        {/* play button circle */}
+        <circle cx="200" cy="150" r="60" fill="#e8431f"/>
+        <polygon points="185,122 185,178 238,150" fill="#fbf9f3"/>
       </svg>
     ),
   },
