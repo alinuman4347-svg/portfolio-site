@@ -17,9 +17,7 @@ export default function Hero() {
           <div className="hero-bottom reveal">
             <p>Creating impactful visual identities, packaging designs, and marketing materials that help brands stand out.</p>
             <div className="btns">
-              <a href="#work" className="btn btn-solid">View My Work ↓</a>
-              <a href="#contact" className="btn btn-ghost">Get In Touch</a>
-              <a href="https://www.behance.net/numanali65" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">View Portfolio ↗</a>
+              <a href="https://www.behance.net/numanali65" target="_blank" rel="noopener noreferrer" className="btn btn-solid">View Portfolio ↗</a>
             </div>
           </div>
         </div>
