@@ -15,7 +15,6 @@ export default function Skills() {
     <section id="skills" className="skills">
       <div className="wrap">
         <div className="sec-head reveal">
-          <span className="sec-num">(04)</span>
           <h2 className="sec-title">Skills &amp; Capabilities</h2>
         </div>
         <div className="skill-cloud reveal">

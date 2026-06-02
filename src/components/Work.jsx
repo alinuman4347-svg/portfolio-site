@@ -88,7 +88,6 @@ export default function Work() {
     <section id="work">
       <div className="wrap">
         <div className="sec-head reveal">
-          <span className="sec-num">(03)</span>
           <h2 className="sec-title">Selected Work</h2>
         </div>
         <div className="work-grid">

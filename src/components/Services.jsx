@@ -10,7 +10,6 @@ export default function Services() {
     <section id="services" className="services">
       <div className="wrap">
         <div className="sec-head reveal">
-          <span className="sec-num">(02)</span>
           <h2 className="sec-title">Services</h2>
         </div>
         <div className="svc-list">

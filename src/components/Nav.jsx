@@ -29,11 +29,11 @@ export default function Nav() {
       </nav>
 
       <div className={`mobile-menu${open ? ' open' : ''}`}>
-        <a href="#about" onClick={close}><span>01</span>About</a>
-        <a href="#services" onClick={close}><span>02</span>Services</a>
-        <a href="#work" onClick={close}><span>03</span>Work</a>
-        <a href="#skills" onClick={close}><span>04</span>Skills</a>
-        <a href="#contact" onClick={close}><span>05</span>Contact</a>
+        <a href="#about" onClick={close}>About</a>
+        <a href="#services" onClick={close}>Services</a>
+        <a href="#work" onClick={close}>Work</a>
+        <a href="#skills" onClick={close}>Skills</a>
+        <a href="#contact" onClick={close}>Contact</a>
       </div>
     </>
   )
