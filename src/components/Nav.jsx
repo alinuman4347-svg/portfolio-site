@@ -10,7 +10,7 @@ export default function Nav() {
       <nav>
         <div className="wrap navbar">
           <a href="#" className="logo">
-            Numan Ashraf<span className="logo-dot">.</span>
+            <img src="/logo.png" alt="Numan Ashraf" className="logo-img" />
           </a>
           <div className="navlinks">
             <a href="#about">About</a>
