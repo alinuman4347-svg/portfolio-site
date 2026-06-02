@@ -4,7 +4,7 @@ export default function About() {
       <div className="wrap about-grid">
         <div className="reveal">
           <div className="sec-head" style={{ marginBottom: 32 }}>
-            <h2 className="sec-title">About</h2>
+            <h2 className="sec-title">About Me</h2>
           </div>
         </div>
         <div className="about-body reveal">
