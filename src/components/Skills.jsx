@@ -2,12 +2,12 @@ const skills = [
   'Adobe Photoshop',
   'Adobe Illustrator',
   'Adobe InDesign',
-  'Packaging Design',
   'Branding',
   'Logo Design',
   'Print Design',
   'Social Media Design',
-  'UI Graphics',
+  'CapCut',
+  'Canva',
 ]
 
 export default function Skills() {
