@@ -117,7 +117,7 @@ header { padding: 150px 0 60px; position: relative; }
 }
 .hero-text { min-width: 0; }
 .hero-image {
-  width: clamp(180px, 22vw, 300px);
+  width: clamp(260px, 28vw, 380px);
   flex-shrink: 0;
   align-self: center;
 }
