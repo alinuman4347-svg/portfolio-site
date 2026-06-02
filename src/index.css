@@ -110,16 +110,19 @@ nav {
 /* HERO */
 header { padding: 150px 0 60px; position: relative; }
 .hero-wrap {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 60px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  gap: 60px;
 }
-.hero-text { min-width: 0; }
+.hero-text { flex: 1; min-width: 0; }
 .hero-image {
   width: clamp(260px, 28vw, 380px);
   flex-shrink: 0;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero-image img {
   width: 100%;
