@@ -15,7 +15,7 @@ export default function Hero() {
             Numan<br />Ash<em>r</em>af
           </h1>
           <div className="hero-bottom reveal">
-            <p>Creating impactful visual identities, packaging designs, and marketing materials that help brands stand out.</p>
+            <p className="hero-tagline">Turning Ideas Into <em>Impactful</em> Designs</p>
             <div className="btns">
               <a href="https://www.behance.net/numanali65" target="_blank" rel="noopener noreferrer" className="btn btn-solid">View Portfolio ↗</a>
             </div>
