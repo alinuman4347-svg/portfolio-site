@@ -404,17 +404,35 @@ section { padding: 110px 0; }
 /* SKILLS */
 .skills { background: var(--ink); color: var(--paper); }
 .skills .sec-title { color: var(--paper); }
-.skill-cloud { display: flex; flex-wrap: wrap; gap: 14px; }
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 60px;
+}
+.skills-cat-title {
+  font-family: 'Space Mono', monospace;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--accent);
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(251,249,243,.12);
+}
+.skill-cloud { display: flex; flex-wrap: wrap; gap: 12px; }
 .chip {
   font-family: 'Space Mono', monospace;
-  font-size: .85rem;
-  padding: 13px 22px;
-  border: 1.5px solid rgba(251,249,243,.25);
+  font-size: .82rem;
+  padding: 11px 20px;
+  border: 1.5px solid rgba(251,249,243,.2);
   border-radius: 40px;
   transition: all .25s;
   cursor: default;
 }
 .chip:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-3px); }
+@media (max-width: 640px) {
+  .skills-grid { grid-template-columns: 1fr; gap: 36px; }
+}
 
 /* QUOTES */
 .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
