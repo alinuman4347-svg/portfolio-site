@@ -19,6 +19,9 @@ export default function Nav() {
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
           </div>
+          <a href="#contact" className="nav-glass-btn">
+            ✦ Hire Me
+          </a>
           <button className="burger" onClick={() => setOpen(!open)} aria-label="Menu">
             <span /><span /><span />
           </button>

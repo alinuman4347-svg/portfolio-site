@@ -44,9 +44,14 @@ nav {
   left: 0;
   width: 100%;
   z-index: 100;
-  mix-blend-mode: difference;
 }
 .navbar { display: flex; justify-content: space-between; align-items: center; height: 84px; }
+
+/* blend-mode scoped to logo, links, burger only — keeps smart colour inversion without breaking glass button */
+.logo,
+.navlinks,
+.burger { mix-blend-mode: difference; }
+
 .logo { font-family: 'Fraunces', serif; font-weight: 900; font-size: 1.4rem; letter-spacing: -.03em; color: #fff; }
 .logo-dot { color: var(--accent); }
 .navlinks { display: flex; gap: 30px; }
@@ -70,6 +75,36 @@ nav {
 }
 .navlinks a:hover::after { width: 100%; }
 
+/* glassmorphism CTA button */
+.nav-glass-btn {
+  font-family: 'Space Mono', monospace;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #fff;
+  padding: 11px 22px;
+  border-radius: 40px;
+  border: 1px solid rgba(231, 70, 34, 0.55);
+  background: rgba(231, 70, 34, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 20px rgba(231, 70, 34, 0.28), inset 0 1px 0 rgba(255,255,255,.12);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .3s, box-shadow .3s, transform .25s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.nav-glass-btn:hover {
+  background: rgba(231, 70, 34, 0.72);
+  box-shadow: 0 6px 28px rgba(231, 70, 34, 0.48), inset 0 1px 0 rgba(255,255,255,.18);
+  transform: translateY(-2px);
+  color: #fff;
+}
+.nav-glass-btn:active { transform: translateY(0); }
+
 .burger {
   display: none;
   flex-direction: column;
@@ -79,6 +114,10 @@ nav {
   border: none;
 }
 .burger span { width: 26px; height: 2px; background: #fff; display: block; }
+
+@media (max-width: 900px) {
+  .nav-glass-btn { display: none; }
+}
 
 .mobile-menu {
   display: none;
