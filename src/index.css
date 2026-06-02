@@ -131,29 +131,32 @@ header { padding: 150px 0 60px; position: relative; }
   display: block;
 }
 @media (max-width: 900px) {
+  header { padding: 100px 0 40px; }
   .hero-wrap {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
     text-align: center;
   }
-  .hero-text { width: 100%; }
   .hero-image {
     order: -1;
-    width: min(160px, 45vw);
-    max-width: 100%;
-    overflow: hidden;
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
   }
   .hero-image img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
   }
+  .hero-text { width: 100%; }
   .eyebrow { justify-content: center; }
   .hero-bottom {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
   .btns { justify-content: center; }
 }
