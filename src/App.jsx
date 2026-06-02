@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import TopBar from './components/TopBar'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -42,6 +43,7 @@ export default function App() {
 
   return (
     <>
+      <TopBar />
       <Nav />
       <Hero />
       <About />
