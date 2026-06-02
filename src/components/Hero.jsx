@@ -18,7 +18,14 @@ export default function Hero() {
           <div className="btns">
             <a href="#work" className="btn btn-solid">View My Work ↓</a>
             <a href="#contact" className="btn btn-ghost">Get In Touch</a>
-          </div>
+          </div><a
+  href="https://www.behance.net/numanali65"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn btn-solid"
+>
+  View Portfolio
+</a>
         </div>
       </div>
       <div className="marquee">
