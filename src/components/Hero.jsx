@@ -9,9 +9,6 @@ export default function Hero() {
   return (
     <header>
       <div className="wrap hero-wrap">
-        <div className="hero-image reveal">
-          <img src="/profile.jpg" alt="Numan Ashraf" />
-        </div>
         <div className="hero-text">
           <div className="eyebrow reveal">Graphic Designer</div>
           <h1 className="hero-title reveal">
@@ -25,6 +22,9 @@ export default function Hero() {
               <a href="https://www.behance.net/numanali65" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">View Portfolio ↗</a>
             </div>
           </div>
+        </div>
+        <div className="hero-image reveal">
+          <img src="/profile.jpg" alt="Numan Ashraf" />
         </div>
       </div>
       <div className="marquee">
