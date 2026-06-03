@@ -330,12 +330,11 @@ section { padding: 110px 0; }
 }
 
 /* ABOUT */
-.about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 70px; align-items: start; }
+.about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 70px; align-items: center; }
 .about-img-wrap {
   width: 100%;
   border-radius: 18px;
   overflow: hidden;
-  border: 1.5px solid var(--line);
   margin-top: 8px;
 }
 .about-img {
