@@ -164,7 +164,7 @@ header { padding: 150px 0 60px; position: relative; }
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 38px;
+  margin-top: -10px;
 }
 .hero-image img {
   width: 100%;
