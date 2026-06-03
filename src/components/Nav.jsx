@@ -30,6 +30,7 @@ export default function Nav() {
 
       <div className={`mobile-menu${open ? ' open' : ''}`}>
         <a href="#about" onClick={close}>About Me</a>
+        <a href="#experience" onClick={close}>Experience</a>
         <a href="#services" onClick={close}>Services</a>
         <a href="#work" onClick={close}>My Work</a>
         <a href="#skills" onClick={close}>Skills</a>
