@@ -13,9 +13,9 @@ export default function Nav() {
             <img src="/logo.png" alt="Numan Ashraf" className="logo-img" />
           </a>
           <div className="navlinks">
-            <a href="#about">About</a>
+            <a href="#about">About Me</a>
             <a href="#services">Services</a>
-            <a href="#work">Work</a>
+            <a href="#work">My Work</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
           </div>

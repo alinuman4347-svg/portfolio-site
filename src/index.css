@@ -50,12 +50,12 @@ nav {
   border-bottom: 1px solid rgba(22, 20, 15, 0.08);
   box-shadow: 0 2px 28px rgba(22, 20, 15, 0.07);
 }
-.navbar { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+.navbar { display: flex; justify-content: flex-start; align-items: center; height: 80px; }
 
 .logo { display: flex; align-items: center; }
 .logo-img { height: 44px; width: auto; display: block; }
 @media (max-width: 900px) { .logo-img { height: 36px; } }
-.navlinks { display: flex; gap: 30px; }
+.navlinks { display: flex; gap: 30px; margin-left: auto; margin-right: 28px; }
 .navlinks a {
   font-family: 'Space Mono', monospace;
   font-size: .78rem;
