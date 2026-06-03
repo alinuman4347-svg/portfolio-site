@@ -530,13 +530,8 @@ footer { border-top: 1.5px solid var(--line); padding: 36px 0; }
 .foot-social-link {
   display: flex;
   align-items: center;
-  gap: 7px;
   color: var(--muted);
   text-decoration: none;
-  font-family: 'Space Mono', monospace;
-  font-size: .74rem;
-  text-transform: uppercase;
-  letter-spacing: .06em;
   transition: color .2s ease, transform .2s ease;
 }
 .foot-social-link svg { transition: transform .2s ease; flex-shrink: 0; }
