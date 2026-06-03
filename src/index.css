@@ -335,7 +335,8 @@ section { padding: 110px 0; }
 }
 
 /* SERVICES */
-.services { border-top: 1.5px solid var(--line); }
+.services { border-top: 1.5px solid var(--line); padding-bottom: 60px; }
+#work { padding-top: 60px; }
 .svc-row {
   display: grid;
   grid-template-columns: 60px 1fr auto;
