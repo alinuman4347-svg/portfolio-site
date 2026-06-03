@@ -88,7 +88,7 @@ export default function Work() {
     <section id="work">
       <div className="wrap">
         <div className="sec-head reveal">
-          <h2 className="sec-title">Selected Work</h2>
+          <h2 className="sec-title">My Work</h2>
         </div>
         <div className="work-grid">
           {projects.map((p, i) => (
