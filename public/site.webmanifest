@@ -1,0 +1,11 @@
+{
+  "name": "Numan Ashraf — Graphic Designer",
+  "short_name": "Numan Ashraf",
+  "icons": [
+    { "src": "/logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/logo.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#f4f1ea",
+  "background_color": "#f4f1ea",
+  "display": "standalone"
+}
