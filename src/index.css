@@ -668,7 +668,7 @@ footer { border-top: 1.5px solid var(--line); padding: 36px 0; }
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .navlinks { display: none; }
-  .burger { display: flex; order: -1; margin-right: 14px; }
+  .burger { display: flex; margin-left: auto; }
 }
 @media (max-width: 760px) {
   .svc-desc { display: none; }
