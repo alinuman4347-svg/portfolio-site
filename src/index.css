@@ -273,17 +273,27 @@ header { padding: 150px 0 60px; position: relative; }
   margin-top: 70px;
   background: var(--ink);
 }
-.marquee-track { display: inline-block; animation: scroll 26s linear infinite; }
-.marquee-track span {
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 26s linear infinite;
+}
+.marquee-item {
+  display: block;
+  flex-shrink: 0;
   font-family: 'Fraunces', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 1.7rem;
   color: var(--paper);
   padding: 0 28px;
+  white-space: nowrap;
 }
-.marquee-track span b { color: var(--accent); font-style: normal; font-weight: 900; }
-@keyframes scroll { to { transform: translateX(-50%); } }
+.marquee-item b { color: var(--accent); font-style: normal; font-weight: 900; }
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 
 /* SECTION HEADERS */
 section { padding: 110px 0; }

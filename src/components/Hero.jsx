@@ -1,6 +1,5 @@
-const marqueeText = (
-  <span>
-    Social Media <b>✦</b> Brand Identity <b>✦</b> Branding <b>✦</b> Logo Design <b>✦</b> Video Editing <b>✦</b>{' '}
+const marqueeItem = (
+  <span className="marquee-item">
     Social Media <b>✦</b> Brand Identity <b>✦</b> Branding <b>✦</b> Logo Design <b>✦</b> Video Editing <b>✦</b>{' '}
   </span>
 )
@@ -27,7 +26,10 @@ export default function Hero() {
       </div>
       <div className="marquee">
         <div className="marquee-track">
-          {marqueeText}
+          {marqueeItem}
+          <span className="marquee-item" aria-hidden="true">
+            Social Media <b>✦</b> Brand Identity <b>✦</b> Branding <b>✦</b> Logo Design <b>✦</b> Video Editing <b>✦</b>{' '}
+          </span>
         </div>
       </div>
     </header>
