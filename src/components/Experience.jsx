@@ -13,10 +13,9 @@ const experiences = [
   },
   {
     role: 'Graphic Designer',
-    company: 'Azure Partners',
+    company: 'Azure Partners (Remote)',
     period: 'Jul 2025 – Present',
-    location: 'Remote · United States',
-    tag: 'Part-time',
+    location: 'United States',
     bullets: [
       'Created social media graphics and educational content visuals',
       'Edited videos and produced supporting design assets for marketing',
