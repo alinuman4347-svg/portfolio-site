@@ -1,14 +1,9 @@
 export default function About() {
   return (
     <section id="about">
-      <div className="wrap about-grid">
-        <div className="reveal">
-          <div className="sec-head" style={{ marginBottom: 32 }}>
-            <h2 className="sec-title">About Me</h2>
-          </div>
-          <div className="about-img-wrap">
-            <img src="/about-me.png" alt="Numan Ashraf" className="about-img" />
-          </div>
+      <div className="wrap">
+        <div className="sec-head reveal" style={{ marginBottom: 48 }}>
+          <h2 className="sec-title">About Me</h2>
         </div>
         <div className="about-body reveal">
           <p className="about-lead">
