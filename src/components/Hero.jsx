@@ -1,7 +1,7 @@
 const marqueeText = (
   <span>
-    Branding <b>✦</b> Packaging <b>✦</b> Logo Design <b>✦</b> Print <b>✦</b> Social Media <b>✦</b> Brand Identity <b>✦</b>{' '}
-    Branding <b>✦</b> Packaging <b>✦</b> Logo Design <b>✦</b> Print <b>✦</b> Social Media <b>✦</b> Brand Identity <b>✦</b>{' '}
+    Social Media <b>✦</b> Brand Identity <b>✦</b> Branding <b>✦</b> Logo Design <b>✦</b> Video Editing <b>✦</b>{' '}
+    Social Media <b>✦</b> Brand Identity <b>✦</b> Branding <b>✦</b> Logo Design <b>✦</b> Video Editing <b>✦</b>{' '}
   </span>
 )
 
