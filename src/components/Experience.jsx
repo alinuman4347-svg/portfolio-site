@@ -2,6 +2,7 @@ const experiences = [
   {
     role: 'Graphic Designer',
     company: 'SymuFolk',
+    companyUrl: 'https://symufolk.com/',
     period: 'Jan 2025 – Present',
     location: 'Porto, Portugal',
     bullets: [
@@ -14,6 +15,7 @@ const experiences = [
   {
     role: 'Graphic Designer',
     company: 'Azure Partners (Remote)',
+    companyUrl: 'https://azurepartners.ai/en',
     period: 'Jul 2025 – Present',
     location: 'United States',
     bullets: [
@@ -52,7 +54,14 @@ export default function Experience() {
                 <div className="exp-top">
                   <div className="exp-role">
                     {exp.role}
-                    {exp.company && <span className="exp-company"> — {exp.company}</span>}
+                    {exp.company && (
+                      <span className="exp-company">
+                        {' — '}
+                        {exp.companyUrl
+                          ? <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="exp-company-link">{exp.company}</a>
+                          : exp.company}
+                      </span>
+                    )}
                     {exp.tag && <span className="exp-tag">{exp.tag}</span>}
                   </div>
                   <div className="exp-meta">
