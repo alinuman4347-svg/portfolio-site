@@ -153,9 +153,9 @@ header { padding: 150px 0 60px; position: relative; }
 .hero-wrap {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 60px;
+  gap: 44px;
 }
 .hero-text { flex: 1; min-width: 0; }
 .hero-image {
@@ -164,6 +164,7 @@ header { padding: 150px 0 60px; position: relative; }
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 38px;
 }
 .hero-image img {
   width: 100%;
@@ -188,6 +189,7 @@ header { padding: 150px 0 60px; position: relative; }
     width: 140px;
     height: 140px;
     flex-shrink: 0;
+    margin-top: 0;
   }
   .hero-image img {
     width: 140px;
