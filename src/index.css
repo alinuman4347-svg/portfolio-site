@@ -542,6 +542,101 @@ footer { border-top: 1.5px solid var(--line); padding: 36px 0; }
   .foot-socials { flex-wrap: wrap; gap: 16px; }
 }
 
+/* EXPERIENCE */
+.exp-list { display: flex; flex-direction: column; gap: 0; }
+.exp-entry {
+  display: flex;
+  gap: 0;
+  padding: 44px 0;
+  border-bottom: 1.5px solid var(--line);
+  position: relative;
+}
+.exp-entry:first-child { border-top: 1.5px solid var(--line); }
+.exp-accent {
+  width: 3px;
+  min-height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-right: 36px;
+  align-self: stretch;
+}
+.exp-body { flex: 1; min-width: 0; }
+.exp-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-bottom: 22px;
+}
+.exp-role {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: clamp(1.3rem, 2.8vw, 1.9rem);
+  letter-spacing: -.01em;
+  line-height: 1.2;
+}
+.exp-company { color: var(--accent); }
+.exp-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  color: var(--muted);
+  margin-left: 12px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.exp-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: .76rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.exp-dot { color: var(--accent); font-size: .9rem; }
+.exp-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.exp-bullets li {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+  padding-left: 20px;
+  position: relative;
+}
+.exp-bullets li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: .5rem;
+  color: var(--accent);
+  line-height: 1.9;
+}
+@media (max-width: 760px) {
+  .exp-top { flex-direction: column; gap: 6px; }
+  .exp-meta { white-space: normal; flex-wrap: wrap; }
+  .exp-accent { margin-right: 22px; }
+}
+@media (max-width: 480px) {
+  .exp-entry { padding: 32px 0; }
+  .exp-accent { display: none; }
+  .exp-bullets li { padding-left: 16px; }
+}
+
 /* reveal */
 .reveal { opacity: 0; transform: translateY(34px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
 .reveal.in { opacity: 1; transform: none; }
