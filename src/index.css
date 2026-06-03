@@ -683,18 +683,26 @@ footer { border-top: 1.5px solid var(--line); padding: 36px 0; }
 }
 @media (hover: hover) and (min-width: 901px) {
   .exp-entry {
-    transition: padding .35s, background .35s, transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s;
+    transition:
+      padding .4s,
+      background .4s,
+      transform .4s cubic-bezier(.2,.7,.2,1),
+      box-shadow .4s,
+      border-color .4s;
     cursor: default;
   }
   .exp-entry:hover {
     padding-left: 24px;
-    background: var(--paper);
-    transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(22, 20, 15, 0.28);
+    background: rgba(22, 20, 15, 0.72);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    border-bottom-color: rgba(232, 67, 31, 0.28);
+    transform: translateY(-4px);
+    box-shadow:
+      0 0 0 1px rgba(232, 67, 31, 0.22),
+      0 8px 32px rgba(232, 67, 31, 0.16),
+      0 28px 64px rgba(22, 20, 15, 0.55);
   }
-  .exp-entry:hover .exp-role { color: var(--ink); }
-  .exp-entry:hover .exp-meta { color: var(--muted); }
-  .exp-entry:hover .exp-bullets li { color: var(--muted); }
 }
 
 /* reveal */
